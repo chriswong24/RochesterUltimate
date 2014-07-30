@@ -1,4 +1,4 @@
 RochesterUltimate
 =================
 
-University of Rochester Ultimate Website
+University of Rochester's Men's Ultimate Website
