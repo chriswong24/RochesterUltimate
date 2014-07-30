@@ -54,22 +54,27 @@ html, body{
 		list-style: none;
 		display: inline-block;
 		position: relative;
-		padding: 0 30px;
+		padding: 0 34px;
+	}
+
+	#logo{
+		position: relative;
+		vertical-align: middle;
 	}
 
 	.mobile-nav{
 		display: none;
 		box-sizing: border-box;
-		padding: 22px 10px;
+		padding: 0 10px;
 
 		.menu{
 			display: block;
 			float: right;
 
 			img{
-				width: 28px;
-				height: 28px;
-				vertical-align: middle;
+				width: 36px;
+				height: 36px;
+				margin-top: 32px;
 			}
 		}
 
@@ -107,20 +112,34 @@ html, body{
 
 /*** Responsive Design ***/
 
-
-$large: "only screen and (max-width: 959px)";
-$mobile-all: "only screen and (max-width: 767px)";
+$large: "only screen and (max-width: 1129px)";
+$medium: "only screen and (max-width: 959px)";
+$small: "only screen and (max-width: 767px)";
 
 
 @media #{$large} {
+	.header{
+		ul, li{
+			padding: 0 30px;
+		}
+	}
+}
+
+@media #{$medium} {
 	.links td{
 		padding: 0px 0px;
 		line-height: 2.9em;
 		font-size: 22px;
 	}
+
+	.header{
+		ul, li{
+			padding: 0 20px;
+		}
+	}
 }
 
-@media #{$mobile-all} {
+@media #{$small} {
 	.container:not(.no-expand){
 		width: 100% !important;
 
@@ -137,6 +156,10 @@ $mobile-all: "only screen and (max-width: 767px)";
 
 		.mobile-nav{
 			display: block !important;
+		}
+
+		#logo img{
+			padding: 0px;
 		}
 	}
 

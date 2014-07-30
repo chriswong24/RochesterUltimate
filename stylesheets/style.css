@@ -35,18 +35,21 @@ html, body {
     list-style: none;
     display: inline-block;
     position: relative;
-    padding: 0 30px; }
+    padding: 0 34px; }
+  .header #logo {
+    position: relative;
+    vertical-align: middle; }
   .header .mobile-nav {
     display: none;
     box-sizing: border-box;
-    padding: 22px 10px; }
+    padding: 0 10px; }
     .header .mobile-nav .menu {
       display: block;
       float: right; }
       .header .mobile-nav .menu img {
-        width: 28px;
-        height: 28px;
-        vertical-align: middle; }
+        width: 36px;
+        height: 36px;
+        margin-top: 32px; }
   .header .mobile-links {
     display: none; }
     .header .mobile-links .mobile-link {
@@ -65,11 +68,17 @@ html, body {
   height: 350px; }
 
 /*** Responsive Design ***/
+@media only screen and (max-width: 1129px) {
+  .header ul, .header li {
+    padding: 0 30px; } }
 @media only screen and (max-width: 959px) {
   .links td {
     padding: 0px 0px;
     line-height: 2.9em;
-    font-size: 22px; } }
+    font-size: 22px; }
+
+  .header ul, .header li {
+    padding: 0 20px; } }
 @media only screen and (max-width: 767px) {
   .container:not(.no-expand) {
     width: 100% !important; }
@@ -79,4 +88,6 @@ html, body {
   .header .default-nav {
     display: none; }
   .header .mobile-nav {
-    display: block !important; } }
+    display: block !important; }
+  .header #logo img {
+    padding: 0px; } }
