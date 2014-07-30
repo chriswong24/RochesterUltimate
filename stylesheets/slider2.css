@@ -1,0 +1,91 @@
+.slider{
+	position: relative;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.slider img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	max-width: none;
+}
+
+.slider-main-image{
+	display: block !important;
+	position: relative !important;
+	width: 100% !important;
+}
+
+.slice{
+	display: block;
+	position: absolute;
+	z-index: 5;
+	height: 100%;
+	top: 0;
+}
+
+.box{
+	display: block;
+	position: absolute;
+	z-index: 5;
+	overflow: hidden;
+}
+
+.box img{
+	display: block;
+}
+
+/* Caption Styles */
+
+.caption{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: #000;
+	color: #FFF;
+	width: 100%;
+	z-index: 5;
+	padding: 5px 10px;
+	opacity: 0.8;
+	overflow: hidden;
+	display: none;
+	-moz-opacity: 0.8;
+	filter:alpha(opacity=8);
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.caption p{
+	padding: 5px;
+	margin: 0px;
+}
+
+.caption a{
+	display: inline !important;
+}
+
+.directionNav a{
+	position: absolute;
+	top: 45%;
+	z-index: 9;
+	cursor: pointer;
+}
+
+.previous{
+	left: 0;
+}
+
+.next{
+	right: 0;
+}
+
+.controlNav a{
+	cursor: pointer;
+}
+
+.controlNav a:active{
+	font-weight: bold;
+}
