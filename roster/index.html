@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 	
-<!-- ===============================================  index.html (homepage) =============================================== -->
+<!-- ===============================================  index.html (roster) =============================================== -->
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -19,8 +19,8 @@
 
     	<!-- CSS Files
     			=============================================== -->   
-      <link rel="stylesheet" href="stylesheets/style.css">
-      <link rel="stylesheet" href="stylesheets/skeleton.css">
+      <link rel="stylesheet" href="../stylesheets/style.css">
+      <link rel="stylesheet" href="../stylesheets/skeleton.css">
 
       <!-- Fonts
           =============================================== -->   
@@ -39,11 +39,11 @@
                 <tr>
                   <td id="left-links"> 
                     <ul>
-                      <li> <a href="roster/index.html">Roster</a></li>
-                      <li> <a href="schedule.html">Schedule</a></li>
-                      <li id="logo"> <a href="index.html"><img src="images/rochesterultimate_logo.png" /></a></li>
-                      <li> <a href="history.html">History</a></li>
-                      <li> <a href="contact.html">Contact</a></li>
+                      <li> <a href="#">Roster</a></li>
+                      <li> <a href="../schedule.html">Schedule</a></li>
+                      <li id="logo"> <a href="../index.html"><img src="../images/rochesterultimate_logo.png" /></a></li>
+                      <li> <a href="../history.html">History</a></li>
+                      <li> <a href="../contact.html">Contact</a></li>
                     </ul>
                   </td>
                 </tr>
@@ -56,8 +56,8 @@
         <!-- Mobile Only -->
         <div class="mobile-nav container">
           <div class="four columns">
-            <a href="index.html" id="logo"><img src="images/rochesterultimate_logo.png" /></a>
-            <a href="#" class="menu" id="menu"><img src="images/navicon.png" /> </a>
+            <a href="index.html" id="logo"><img src="../images/rochesterultimate_logo.png" /></a>
+            <a href="#" class="menu" id="menu"><img src="../images/navicon.png" /> </a>
           </div>
         </div>
 
@@ -71,13 +71,55 @@
       </div>
 
     <!-- End top bar -->
-    <div>
-    test
+
+    <!-- Cover Photo + Text -->
+    <div id="cover_photo" class="overlay_purple_gradient">
+      <div id="cover_title" class="sixteen columns">
+        <h1>2014-2015 ROSTER</h1>
+      </div>
     </div>
+
+    <!-- Roster -->
+    <div class="container padding-top">
+      <div class="roster sixteen columnns">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>10</td>
+              <td><a href="christopher-wong.html">Christopher Wong</a></td>
+              <td>Junior</td>
+            </tr>
+            <tr>
+              <td>45</td>
+              <td><a href="christopher-dawson.html">Christopher Dawson</a></td>
+              <td>Junior</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Christopher Wong</td>
+              <td>Junior</td>
+            </tr>
+            <tr>
+              <td>45</td>
+              <td>Christopher Dawson</td>
+              <td>Junior</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
 
     <!-- Scripts -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="scripts/urultimate.js"></script>
+    <script src="../scripts/urultimate.js"></script>
     
 	</body>
 </html>

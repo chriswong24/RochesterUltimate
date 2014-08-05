@@ -1,3 +1,4 @@
+/*** General Styles ***/
 ul, ol, li, h1, h2, h3, h4, h5,
 h6, pre, form, body, html, p,
 blockquote, fieldset, input {
@@ -8,13 +9,16 @@ html, body {
   height: 100%;
   background-color: #f8f8f8; }
 
+.padding-top {
+  padding-top: 50px !important; }
+
 /*** Navigation Bar Styles ***/
 .header {
   width: 100%;
   background-color: white;
   top: 0;
   left: 0;
-  font-family: Oswald, sans-serif, sans;
+  font-family: Oswald, Helvetica, sans;
   border-bottom: 1px solid #bbbbcc; }
   .header .links {
     border-spacing: 0px;
@@ -63,6 +67,64 @@ html, body {
         color: #842dce;
         background-color: #f8f8f8; }
 
+/* End of Navigation Bar Styles */
+/* Roster Page Styles */
+#cover_photo {
+  position: relative;
+  background-image: url("../images/roster_cover.jpg");
+  background-size: cover;
+  background-position: top center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%; }
+
+#cover_title {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 0; }
+  #cover_title h1 {
+    font-family: Oswald, Helvetica, sans;
+    font-size: 5.65em;
+    color: white; }
+
+.overlay_purple_gradient {
+  background-image: linear-gradient(to right bottom, rgba(155, 20, 155, 0.66) 0%, rgba(0, 56, 146, 0.66) 100%);
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  content: ''; }
+
+.roster {
+  background-color: #e8e8e8;
+  border: 1px solid #d0d0d0; }
+  .roster table {
+    color: #4e4e4e;
+    font-family: Roboto, Helvetica, sans;
+    width: 100%;
+    border-spacing: 0; }
+    .roster table tr:nth-child(odd) {
+      background-color: #f4f4f4; }
+    .roster table tr:nth-child(even) {
+      background-color: #e8e8e8; }
+    .roster table thead {
+      outline: 1px solid #d0d0d0; }
+    .roster table tbody, .roster table tr, .roster table td {
+      padding: 1.25em 0.875em;
+      line-height: 1.125em;
+      text-align: center; }
+    .roster table th {
+      font-weight: bold;
+      padding: 0.625em; }
+    .roster table a {
+      text-decoration: none;
+      color: #008cba; }
+      .roster table a:hover {
+        color: #005470; }
+
 .main {
   background-color: white;
   height: 350px; }
@@ -70,7 +132,10 @@ html, body {
 /*** Responsive Design ***/
 @media only screen and (max-width: 1129px) {
   .header ul, .header li {
-    padding: 0 30px; } }
+    padding: 0 30px; }
+
+  #cover_title h1 {
+    font-size: 4.0em; } }
 @media only screen and (max-width: 959px) {
   .links td {
     padding: 0px 0px;
@@ -90,4 +155,7 @@ html, body {
   .header .mobile-nav {
     display: block !important; }
   .header #logo img {
-    padding: 0px; } }
+    padding: 0px; }
+
+  #cover_title h1 {
+    font-size: 3.5em; } }
